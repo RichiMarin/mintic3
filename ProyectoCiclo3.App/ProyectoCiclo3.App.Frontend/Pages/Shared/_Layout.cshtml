@@ -23,23 +23,32 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Usuario/Create">Crear Usuario</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuario
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Usuario/Create">Crear Usuario</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Usuario/List">Listar Usuario</a></li>
+                            </ul>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Usuario/List">Listar Usuario</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Encomienda
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Encomienda/Create">Crear Encomienda</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Encomienda/List">Listar Encomienda</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Encomienda/Create">Crear Encomienda</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Encomienda/List">Listar Encomienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Servicio/Create">Crear Servicio</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Servicio/List">Listar Servicio</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Servicio/Create">Crear Servicio</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-page="/Servicio/List">Listar Servicio</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
