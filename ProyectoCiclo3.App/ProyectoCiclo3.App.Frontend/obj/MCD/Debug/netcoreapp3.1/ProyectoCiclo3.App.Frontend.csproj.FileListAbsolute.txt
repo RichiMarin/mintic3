@@ -86,3 +86,4 @@ E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Fronten
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\ProyectoCiclo3.App.Persistencia.pdb
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\ProyectoCiclo3.App.Dominio.pdb
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Usuario\Details.cshtml.g.cs
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Encomienda\Details.cshtml.g.cs

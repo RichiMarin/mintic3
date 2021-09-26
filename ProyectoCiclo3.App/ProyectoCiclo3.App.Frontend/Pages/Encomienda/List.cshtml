@@ -1,39 +1,32 @@
 @page
+@model ProyectoCiclo3.App.Frontend.Pages.ListEncomiendaModel
 @{
 }
-
-<table class="table-bordered border-primary col-6">
+ 
+<h1>Listado de Encomiendas</h1>
+<table class="table-bordered border-primary col-8">
   <thead>
     <tr>
-      <th scope="col">id</th>
-      <th scope="col">Descripcion</th> 
+      <th scope="col">Id</th>
+      <th scope="col">Presentacion</th>
       <th scope="col">Peso</th>
       <th scope="col">Tipo</th>
       <th scope="col">Presentacion</th>
-
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Tablet Samsung 10"</td>
-      <td>Tecnologia</td>
-      <td>2 Kilos</td>
-      <td>Caja 14cm x 20 cm</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Televisor LG 65" 4K</td>
-      <td>Tecnologia</td>
-      <td>15 Kilos</td>
-      <td>Caja de 2mts x 25cm</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Carro a control remoto amarillo</td>
-      <td>Jugueteria</td>
-      <td>3 Kilos</td>
-      <td>Caja 50cm x 30cm</td>
-    </tr>
-  </tbody>
+    @foreach (var encomienda in Model.Encomienda)
+    {
+        <tr>
+            <td>@encomienda.id</td>
+            <td>@encomienda.presentacion</td>
+            <td>@encomienda.peso</td>
+            <td>@encomienda.tipo</td>
+            <td>@encomienda.presentacion</td>
+              <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-EncomiendaId="@encomienda.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" href="">Editar</a>
+              <a class="btn btn-danger" href="">Eliminar</a>
+              </td>
+        </tr>
+    }
 </table>
