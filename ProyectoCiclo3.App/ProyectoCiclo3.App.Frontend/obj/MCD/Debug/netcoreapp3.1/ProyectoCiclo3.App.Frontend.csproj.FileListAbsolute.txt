@@ -88,3 +88,4 @@ E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Fronten
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Usuario\Details.cshtml.g.cs
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Encomienda\Details.cshtml.g.cs
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Servicio\Details.cshtml.g.cs
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Usuario\Edit.cshtml.g.cs
