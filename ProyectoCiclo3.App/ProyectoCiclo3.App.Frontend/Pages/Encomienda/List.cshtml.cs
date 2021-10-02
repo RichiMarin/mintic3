@@ -13,6 +13,9 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
        
         private readonly RepositorioEncomienda repositorioEncomienda;
+        [BindProperty]
+        public Usuario Encomid {get;set;}
+      
         public IEnumerable<Encomienda> Encomienda {get;set;}
  
     public ListEncomiendaModel(RepositorioEncomienda repositorioEncomienda)
@@ -23,6 +26,14 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     public void OnGet()
     {
         Encomienda=repositorioEncomienda.GetAll();
+    }
+    public IActionResult OnPost()
+    {
+        if(Encomid.id>0)
+        {
+        repositorioEncomienda.Delete(Encomid.id);
+        }
+        return RedirectToPage("./List");
     }
     }
 }

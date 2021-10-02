@@ -54,5 +54,12 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
            return newEncomienda;
         }
 
+         public void Delete(int id)
+        {
+        var encomid= encomiendas.SingleOrDefault(b => b.id == id);
+        encomiendas.Remove(encomid);
+        return;
+        }
+
     }
 }

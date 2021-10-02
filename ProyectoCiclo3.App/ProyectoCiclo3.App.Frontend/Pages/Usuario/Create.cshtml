@@ -7,13 +7,13 @@
 <div class="text-center col-6">
 <form method="post">
   <label for="nombre" class="form-label">Nombre:</label>
-  <input type="text" class="form-control" id="nombre" placeholder="Nombre" asp-for="Usuario.nombre">
+  <input type="text" class="form-control" id="nombre" placeholder="Nombre" asp-for="Usuario.nombre" required>
   <label for="apellidos" class="form-label">Apellidos:</label>
-  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" asp-for="Usuario.apellidos">
+  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" asp-for="Usuario.apellidos" required>
   <label for="direccion" class="form-label">Direccion:</label>
-  <input type="text" class="form-control" id="direccion" placeholder="Direccion" asp-for="Usuario.direccion">
+  <input type="text" class="form-control" id="direccion" placeholder="Direccion" asp-for="Usuario.direccion" required>
   <label for="telefono" class="form-label">Telefono:</label>
-  <input type="text" class="form-control" id="telefono" placeholder="Telefono" asp-for="Usuario.telefono">
+  <input type="text" class="form-control" id="telefono" placeholder="Telefono" asp-for="Usuario.telefono" required>
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>
