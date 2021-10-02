@@ -26,7 +26,7 @@
             <td>@servicio.encomienda</td>
               <td>
               <a class="btn btn-info" asp-page="./Details" asp-route-ServicioId="@servicio.id"><i class="fas fa-adjust"></i>Ver</a>
-              <a class="btn btn-info" href="">Editar</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-servicioId="@servicio.id">Editar</a>
               <a class="btn btn-danger" href="">Eliminar</a>
               </td>
         </tr>
