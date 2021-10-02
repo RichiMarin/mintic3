@@ -7,18 +7,17 @@
 <div class = "row mt-5">
 <div class="text-center col-6">
 <form method="post">
-  <label for="id" class="form-label">Id:</label>
-  <input type="number" class="form-control" id="id" name="id" placeholder="Id">
+  
   <label for="origen" class="form-label">Origen:</label>
-  <input type="text" class="form-control" id="origen" name="origen" placeholder="Datos Origen">
+  <input type="text" class="form-control" id="origen" placeholder="Datos Origen" asp-for="Servicio.origen">
   <label for="destino" class="form-label">Destino:</label>
-  <input type="text" class="form-control" id="destino" name="destino" placeholder="Datos Destino">
+  <input type="text" class="form-control" id="destino" placeholder="Datos Destino" asp-for="Servicio.destino">
   <label for="fecha" class="form-label">Fecha:</label>
-  <input type="Date" class="form-control" id="fecha" name="fecha" placeholder="Fecha">
+  <input type="Date" class="form-control" id="fecha" placeholder="Fecha" asp-for="Servicio.fecha">
   <label for="hora" class="form-label">Hora:</label>
-  <input type="time" class="form-control" id="hora" name="hora" placeholder="Hora">
+  <input type="time" class="form-control" id="hora" placeholder="Hora" asp-for="Servicio.hora">
   <label for="encomienda" class="form-label">Encomienda:</label>
-  <input type="text" class="form-control" id="encomienda" name="encomienda" placeholder="Datos Encomienda">
+  <input type="text" class="form-control" id="encomienda" placeholder="Datos Encomienda" asp-for="Servicio.encomienda">
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>

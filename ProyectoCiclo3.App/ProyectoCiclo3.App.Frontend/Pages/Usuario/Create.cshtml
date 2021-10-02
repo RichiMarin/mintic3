@@ -6,16 +6,14 @@
 <div class = "row mt-5">
 <div class="text-center col-6">
 <form method="post">
-  <label for="id" class="form-label">Id:</label>
-  <input type="number" class="form-control" id="id" name="id" placeholder="Id">
   <label for="nombre" class="form-label">Nombre:</label>
-  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+  <input type="text" class="form-control" id="nombre" placeholder="Nombre" asp-for="Usuario.nombre">
   <label for="apellidos" class="form-label">Apellidos:</label>
-  <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" asp-for="Usuario.apellidos">
   <label for="direccion" class="form-label">Direccion:</label>
-  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+  <input type="text" class="form-control" id="direccion" placeholder="Direccion" asp-for="Usuario.direccion">
   <label for="telefono" class="form-label">Telefono:</label>
-  <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+  <input type="text" class="form-control" id="telefono" placeholder="Telefono" asp-for="Usuario.telefono">
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>

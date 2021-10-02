@@ -7,20 +7,18 @@
 <div class = "row mt-5">
 <div class="text-center col-6">
 <form method="post">
-  <label for="id" class="form-label">Id:</label>
-  <input type="number" class="form-control" id="id" name="id" placeholder="Id">
-
+  
   <label for="descripcion" class="form-label">Descripcion:</label>
-  <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripcion">
+  <input type="text" class="form-control" id="descripcion" placeholder="Descripcion" asp-for="Encomienda.descripcion">
 
   <label for="peso" class="form-label">Peso:</label>
-  <input type="number" class="form-control" id="peso" name="peso" placeholder="Peso">
+  <input type="number" class="form-control" id="peso" placeholder="Peso" asp-for="Encomienda.peso">
 
   <label for="tipo" class="form-label">Tipo:</label>
-  <input type="text" class="form-control" id="tipo" name="tipo" placeholder="Tipo">
+  <input type="text" class="form-control" id="tipo" placeholder="Tipo" asp-for="Encomienda.tipo">
 
   <label for="presentacion" class="form-label">Presentacion:</label>
-  <input type="text" class="form-control" id="presentacion" name="presentacion" placeholder="Presentacion">
+  <input type="text" class="form-control" id="presentacion" placeholder="Presentacion" asp-for="Encomienda.presentacion">
   
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>

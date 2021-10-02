@@ -20,10 +20,6 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             this.repositorioServicio=repositorioServicio;
        }
 
-        public void OnGet()
-        {
- 
-        }
         public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
