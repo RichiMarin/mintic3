@@ -13,6 +13,10 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
        
         private readonly RepositorioServicio repositorioServicio;
+
+        [BindProperty]
+        public Servicio Servic {get;set;}
+
         public IEnumerable<Servicio> Servicio {get;set;}
  
     public ListServicioModel(RepositorioServicio repositorioServicio)
@@ -23,6 +27,14 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     public void OnGet()
     {
         Servicio=repositorioServicio.GetAll();
+    }
+    public IActionResult OnPost()
+    {
+        if(Servic.id>0)
+        {
+        repositorioServicio.Delete(Servic.id);
+        }
+        return RedirectToPage("./List");
     }
     }
 }

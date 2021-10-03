@@ -53,5 +53,12 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
            return newServicio;
         }
 
+           public void Delete(int id)
+        {
+        var servic= servicios.SingleOrDefault(b => b.id == id);
+        servicios.Remove(servic);
+        return;
+        }
+
     }
 }
