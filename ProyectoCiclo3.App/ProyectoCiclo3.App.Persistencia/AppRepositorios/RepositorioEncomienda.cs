@@ -9,57 +9,48 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
     {
         List<Encomienda> encomiendas;
  
-    public RepositorioEncomienda()
-        {
-            encomiendas = new List<Encomienda>()
-            {
-                new Encomienda{id=1,descripcion="Tablet Samsung 10",peso= 2,tipo= "Tecnologia",presentacion= "Caja 14cm x 20 cm"},
-                new Encomienda{id=2,descripcion="Televisor LG 65 4K",peso= 15,tipo= "Tecnologia",presentacion= "Caja de 2mts x 25cm"},
-                new Encomienda{id=3,descripcion="Carro a control remoto amarillo",peso= 3,tipo= "Jugueteria",presentacion= "Caja 50cm x 30cm"}
- 
-            };
-        }
+     private readonly AppContext _appContext = new AppContext();  
  
         public IEnumerable<Encomienda> GetAll()
         {
-            return encomiendas;
+           return _appContext.Encomiendas;
         }
  
         public Encomienda GetEncomiendaWithId(int id){
-            return encomiendas.SingleOrDefault(b => b.id == id);
+            return _appContext.Encomiendas.Find(id);
         }
 
         public Encomienda Update(Encomienda newEncomienda){
 
-            var encomienda= encomiendas.SingleOrDefault(b => b.id == newEncomienda.id);
+            var encomienda= _appContext.Encomiendas.Find(newEncomienda.id);
 
             if(encomienda != null){
                 encomienda.descripcion = newEncomienda.descripcion;
                 encomienda.peso = newEncomienda.peso;
                 encomienda.tipo = newEncomienda.tipo;
                 encomienda.presentacion = newEncomienda.presentacion;
-                
+                 //Guardar en base de datos
+                 _appContext.SaveChanges();
             }
         return encomienda;
         }
 
         public Encomienda Create(Encomienda newEncomienda)
         {
-           if(encomiendas.Count > 0){
-           newEncomienda.id=encomiendas.Max(r => r.id) +1; 
-            }else{
-               newEncomienda.id = 1; 
-            }
-           encomiendas.Add(newEncomienda);
-           return newEncomienda;
+           var addEncomienda = _appContext.Encomiendas.Add(newEncomienda);
+            _appContext.SaveChanges();
+            return addEncomienda.Entity;
         }
 
          public void Delete(int id)
         {
-        var encomid= encomiendas.SingleOrDefault(b => b.id == id);
-        encomiendas.Remove(encomid);
-        return;
+        var encomid= _appContext.Encomiendas.Find(id);
+        if (encomid == null)
+            return;
+        _appContext.Encomiendas.Remove(encomid);
+        _appContext.SaveChanges();
         }
+
 
     }
 }
