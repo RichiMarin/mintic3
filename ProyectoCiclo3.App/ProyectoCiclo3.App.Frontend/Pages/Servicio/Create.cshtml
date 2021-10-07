@@ -9,15 +9,33 @@
 <form method="post">
   
   <label for="origen" class="form-label">Origen:</label>
-  <input type="text" class="form-control" id="origen" placeholder="Datos Origen" asp-for="Servicio.origen">
+      <select asp-for="Servicio.origen" class="form-control">
+            <option value="">-</option>
+            @foreach (var usuario in Model.Usuarios)
+        {
+            <option value="@usuario.id">@usuario.nombre @usuario.apellidos</option>
+        }
+        </select>
   <label for="destino" class="form-label">Destino:</label>
-  <input type="text" class="form-control" id="destino" placeholder="Datos Destino" asp-for="Servicio.destino">
+      <select asp-for="Servicio.destino" class="form-control">
+            <option value="">-</option>
+            @foreach (var usuario in Model.Usuarios)
+        {
+            <option value="@usuario.id">@usuario.nombre @usuario.apellidos</option>
+        }
+        </select>
   <label for="fecha" class="form-label">Fecha:</label>
   <input type="Date" class="form-control" id="fecha" placeholder="Fecha" asp-for="Servicio.fecha">
   <label for="hora" class="form-label">Hora:</label>
   <input type="time" class="form-control" id="hora" placeholder="Hora" asp-for="Servicio.hora">
   <label for="encomienda" class="form-label">Encomienda:</label>
-  <input type="text" class="form-control" id="encomienda" placeholder="Datos Encomienda" asp-for="Servicio.encomienda">
+      <select asp-for="Servicio.encomienda" class="form-control">
+            <option value="">-</option>
+            @foreach (var encomienda in Model.Encomiendas)
+        {
+            <option value="@encomienda.id">@encomienda.descripcion @encomienda.presentacion</option>
+        }
+        </select>
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>
