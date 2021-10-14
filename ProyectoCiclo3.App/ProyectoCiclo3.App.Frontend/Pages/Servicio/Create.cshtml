@@ -9,7 +9,7 @@
 <form method="post">
   
   <label for="origen" class="form-label">Origen:</label>
-      <select asp-for="Servicio.origen" class="form-control">
+      <select name="origen" class="form-control">
             <option value="">-</option>
             @foreach (var usuario in Model.Usuarios)
         {
@@ -17,7 +17,7 @@
         }
         </select>
   <label for="destino" class="form-label">Destino:</label>
-      <select asp-for="Servicio.destino" class="form-control">
+      <select name="destino" class="form-control">
             <option value="">-</option>
             @foreach (var usuario in Model.Usuarios)
         {
@@ -25,11 +25,11 @@
         }
         </select>
   <label for="fecha" class="form-label">Fecha:</label>
-  <input type="Date" class="form-control" id="fecha" placeholder="Fecha" asp-for="Servicio.fecha">
+  <input type="Date" class="form-control" id="fecha" placeholder="Fecha" name="fecha">
   <label for="hora" class="form-label">Hora:</label>
-  <input type="time" class="form-control" id="hora" placeholder="Hora" asp-for="Servicio.hora">
+  <input type="time" class="form-control" id="hora" placeholder="Hora" name="hora">
   <label for="encomienda" class="form-label">Encomienda:</label>
-      <select asp-for="Servicio.encomienda" class="form-control">
+      <select name="encomienda" class="form-control">
             <option value="">-</option>
             @foreach (var encomienda in Model.Encomiendas)
         {

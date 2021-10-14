@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProyectoCiclo3.App.Persistencia.AppRepositorios;
+using Microsoft.AspNetCore.Authentication;
 
 namespace ProyectoCiclo3.App.Frontend
 {
@@ -51,7 +51,7 @@ namespace ProyectoCiclo3.App.Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseStaticFiles();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
