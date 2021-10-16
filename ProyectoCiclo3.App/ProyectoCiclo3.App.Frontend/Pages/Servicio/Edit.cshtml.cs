@@ -32,6 +32,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             if(!ModelState.IsValid)
             {
                 return Page();
+            
             }
             if(Servicio.id>0)
             {
