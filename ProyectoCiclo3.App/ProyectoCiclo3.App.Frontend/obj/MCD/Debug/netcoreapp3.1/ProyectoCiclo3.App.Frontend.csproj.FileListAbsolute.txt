@@ -185,3 +185,8 @@ E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Fronten
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\web.config
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\appsettings.Development.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\appsettings.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\ProyectoCiclo3.App.Frontend.deps.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\ProyectoCiclo3.App.Frontend.runtimeconfig.json
