@@ -190,3 +190,8 @@ E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Fronten
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\appsettings.json
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\ProyectoCiclo3.App.Frontend.deps.json
 E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\ProyectoCiclo3.App.Frontend.runtimeconfig.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\publish\web.config
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\publish\appsettings.Development.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\publish\appsettings.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\publish\ProyectoCiclo3.App.Frontend.deps.json
+E:\mintic\Ciclo III\Desarrollo web\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\publish\publish\ProyectoCiclo3.App.Frontend.runtimeconfig.json

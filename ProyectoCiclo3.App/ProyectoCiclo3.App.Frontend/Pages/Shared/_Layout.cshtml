@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css" /> 
+<style>
+    body {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyb2OHAm5O0D8QV5eS1x7DDFgy38jfnZRXMonBa9Z0VSCeOOf46I265hUtM3y6DMHmhfo&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    }
+</style>
 </head>
 <body>
     <header>
@@ -66,13 +75,13 @@
             </form>
         </nav>
     </header>
-        <div class="container">
+    <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
-        </div>
+</div>
 
-    <footer class="border-top footer text-muted">
+<footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - ProyectoCiclo3.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
             <a href="https://github.com/RichiMarin/mintic3/projects/1" class="bi-github" role="img" aria-label="GitHub">GitHub</a>
@@ -86,6 +95,10 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false)    
+ 
 </body>
+
+
+
 </html>
